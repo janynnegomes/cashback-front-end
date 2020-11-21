@@ -1,0 +1,15 @@
+@import '../styles.scss';
+
+.app-component{
+    .row{
+
+        .side-nav{
+            height: 100vh;
+            padding: $spacing;            
+        }
+
+        .page-content{
+            padding: $spacing;   
+        }
+    }
+}
