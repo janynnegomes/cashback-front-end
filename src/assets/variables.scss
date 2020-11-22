@@ -1,19 +1,31 @@
 /* override boostrap variables*/
-$blue:    #13569e;
+
+/* COLORS*/
+$blue:    #3c99d3;
 $indigo:  #4b0fac;
 $purple:  #472783;
 $pink:    #c43477;
 $red:     #b13541;
-$orange:  #df6d10;
-$yellow:  #e7c55f;
-$green:   #8cc599;
-$teal:    #26a07b;
+$orange:  #f28020;
+$yellow:  #d4dc23;
+$green:   #6f967e;
+$teal:    #007e78;
 $cyan:    #6ab3be;
 
+$gray-100: #eeeef0;
+
+
+$primary:       $teal;
+$secondary:     $green;
+
+/* SPACING */
 $spacer : 1rem;
 
+/* BUTTONS */
 $btn-border-radius: 2rem;
 $btn-padding-x: 2rem;
+
+$body-bg: $gray-100;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 

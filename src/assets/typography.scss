@@ -1,0 +1,7 @@
+/* HEADERS*/
+@for $i from 1 through 6 {
+    .h#{$i}, h#{$i} { 
+      //color: red;
+    }
+
+}
