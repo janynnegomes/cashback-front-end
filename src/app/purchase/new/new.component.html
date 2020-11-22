@@ -1,1 +1,26 @@
-<p>new works!</p>
+<div class="container">
+    <button class="btn btn-secondary" (click)="toggleCanPurchase()"> Toggle</button>
+    <button class="btn btn-primary" *ngIf="canAddPurchase" >Add purchase</button>
+    
+    <form #formNew  [formGroup]="form" (submit)="submitNewPurchase()">
+        <div class="form-row"  >
+          <div class="form-group col-md-4" [ngClass]="{'error': (isFormSubmitted || formNewControls.ammount.touched) && formNewControls.ammount.errors}">
+            <label for="ammount">Ammount</label>
+            <input type="number" class="form-control"   id="inputAmmount" formControlName="ammount">
+            
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputCode">Code</label>
+            <input type="number" class="form-control" id="inputCode" formControlName="code">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputDate">Date</label>
+            <input type="date" class="form-control" id="inputDate" formControlName="date">
+          </div>
+         
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+
+</div>
