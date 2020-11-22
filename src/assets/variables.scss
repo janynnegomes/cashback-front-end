@@ -1,0 +1,19 @@
+/* override boostrap variables*/
+$blue:    #13569e;
+$indigo:  #4b0fac;
+$purple:  #472783;
+$pink:    #c43477;
+$red:     #b13541;
+$orange:  #df6d10;
+$yellow:  #e7c55f;
+$green:   #8cc599;
+$teal:    #26a07b;
+$cyan:    #6ab3be;
+
+$spacer : 1rem;
+
+$btn-border-radius: 2rem;
+$btn-padding-x: 2rem;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
