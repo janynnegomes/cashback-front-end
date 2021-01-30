@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+
+    &__item{       
+        text-decoration: none;
+        padding: #{$spacer/2};
+        transition-duration: .3s;
+        cursor: pointer;
+    
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        } 
+        
+    }
+}

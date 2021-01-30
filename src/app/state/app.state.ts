@@ -1,3 +1,5 @@
 export interface State{
-    user:any
+    user:any,
+    navigation:any,
+    error:any
 }

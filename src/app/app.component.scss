@@ -1,15 +1,23 @@
-@import '../styles.scss';
+@import '../assets/variables.scss';
 
 .app-component{
     .row{
-
-        .side-nav{
+        aside{
             height: 100vh;
-            padding: $spacer;            
+            background-color: $primary;
+            text-align: center;
+            padding: 0;
+            app-navigation{
+                display: block;
+                margin-top: $spacer;   
+            }
+            
         }
 
         .page-content{
             padding: $spacer;   
+            height: 100vh;
+            overflow:scroll;
         }
     }
 }

@@ -22,3 +22,7 @@ export const getCurrentPurchase = createSelector(
 export const getCanAddPurchase = createSelector(
     getPurchasesFeatureState,
     state => state.canAddPurchase);
+
+export const getError = createSelector(
+    getPurchasesFeatureState,
+    state => state.error);

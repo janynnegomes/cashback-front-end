@@ -1,24 +1,22 @@
 <div class="app-component container-fluid">
   <div class="row">
-    <aside class="col-md-3 bg-primary side-nav col-xs-12">
-      <h1>{{title}}</h1>
-      <h2>Menu</h2>
-      <ul>
-        <li>
-          My cashs
-        </li>
-        <li class="item__exit">
-          Exit
-        </li>
-      </ul>
+    <aside class="col-md-3 side-nav col-xs-12">
+      <a [routerLink]="['home']"><h1>{{title}}</h1></a>
+      <app-user-card>
+      </app-user-card>
+      <app-navigation>        
+      </app-navigation>
     </aside>
     <section id="page-content" class="col-md-9 page-content col-xs-12">
       <div class="row">
-        <div class="col page-header">
-          <h3>Breadcrumb :: Home :: My Cashs</h3>
+        <div class="col page-header breadcrumb">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item"> <a [routerLink]="['/']">Home</a></li>
+            <li class="breadcrumb__item">List of Purchases</li>
+          </ul>
         </div>
       </div>
-      <div class="row page-body bg-secondary">
+      <div class="row page-body ">
         <div class="col-12 p-4">
           <router-outlet></router-outlet>
         </div>

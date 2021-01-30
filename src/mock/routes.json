@@ -1,0 +1,5 @@
+{
+  "/:resource/:id/show": "/:resource/:id",
+  "/purchases/": "/purchases",
+  "/articles\\?id=:id": "/posts/:id"
+}

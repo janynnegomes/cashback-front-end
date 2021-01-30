@@ -1,0 +1,30 @@
+@import '../../../assets/variables.scss';
+
+.navigation{
+    color: $white;
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+
+    &-header{
+        text-align: center;
+        display: none;
+    }
+   
+    &-item{
+        padding: $spacer;        
+        border-bottom: solid 1px $secondary;
+        cursor: pointer;
+        transition-duration: 0.3s;
+
+        &:hover{
+            background-color: $secondary;
+            color:$white;
+        }
+
+        &-selected{
+            font-weight: 400;
+            background-color: $secondary;
+        }
+    }
+}

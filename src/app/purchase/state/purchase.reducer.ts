@@ -11,7 +11,8 @@ export interface State extends AppState.State{
     purchases: [],
     currentPurchaseId:null,
     currrentPurchase:null,
-    canAddPurchase: true
+    canAddPurchase: true,
+    error:null
 }
 
 export const purchaseReducer = createReducer<PurchasesState>(
@@ -30,6 +31,20 @@ export const purchaseReducer = createReducer<PurchasesState>(
                 ammount: "0",
                 date: new Date().toDateString()
             }
+        }
+    }),
+    on(PurchaseActions.loadPurchasesSuccess,(state, action):PurchasesState=>{
+        return {
+            ...state,
+            purchases: action.purchases,
+            error:null
+        }
+    }),
+    on(PurchaseActions.loadPurchasesFail,(state, action):PurchasesState=>{
+        return {
+            ...state,
+            purchases:[],
+            error: action.error
         }
     })
 );

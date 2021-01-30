@@ -1,0 +1,14 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "purchases": [
+        { "identifier": "UASXJKAHAJ", "ammount": "200", "date": "01/01/2020", "cashbackStatus":"Em validação", "cashbackPercentual":"5%", "cashbackAmmount":"10.00" },
+        { "identifier": "ASAASADAS", "ammount": "100", "date": "02/01/2020","cashbackStatus":"Negado", "cashbackPercentual":"20%", "cashbackAmmount":"20"  },
+        { "identifier": "IOIOIOIUIUI", "ammount": "30", "date": "03/01/2020","cashbackStatus":"Aprovado", "cashbackPercentual":"1%", "cashbackAmmount":"0.30"  }
+      ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }

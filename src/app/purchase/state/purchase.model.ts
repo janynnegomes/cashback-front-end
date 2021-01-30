@@ -9,4 +9,5 @@ export interface PurchasesState{
     currentPurchaseId: string;
     currrentPurchase: Purchase;
     canAddPurchase: boolean;
+    error:any
 }

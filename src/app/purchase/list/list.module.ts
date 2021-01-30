@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ListPurchasesComponent } from './list.component';
+import { ListPurchasesRoutingModule } from './list-routing.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ListPurchasesComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    ListPurchasesRoutingModule
   ]
 })
 export class ListModule { }
